@@ -10,9 +10,7 @@
     "netlify-identity-widget": "^1.9.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "theme-ui": "^0.3.5",
-    "apollo-server-lambda": "^2.19.2",
-    "graphql": "^15.5.0"
+    "theme-ui": "^0.3.5"
   },
   "scripts": {
     "develop": "gatsby develop",
