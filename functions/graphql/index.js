@@ -51,4 +51,9 @@ const server = new ApolloServer({
   introspection: true,
 });
  
-exports.handler = server.createHandler();
+exports.handler = server.createHandler({
+  cores:{
+    origin:"*",
+    credentials: true
+  }
+});
