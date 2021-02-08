@@ -6,7 +6,6 @@ import {IdentityContext} from '../../identity-context'
  
 export default index => {
     const {user,identity:netlifyIdentity} = useContext(IdentityContext);
-    console.log(user);
     return (
         
     <Container>

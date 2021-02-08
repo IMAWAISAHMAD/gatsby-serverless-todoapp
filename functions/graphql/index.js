@@ -21,8 +21,7 @@ const typeDefs = gql`
   }
 `;
 
-const todos = {};
-let todoIndex = 0;
+
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {

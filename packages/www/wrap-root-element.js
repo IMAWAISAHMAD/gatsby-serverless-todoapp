@@ -10,6 +10,6 @@ const newTheme = {
 }
 module.exports = ({ element }) => (
   <Provider>
-    <ThemeProvider theme={newTheme}>{element}</ThemeProvider>
+     <ThemeProvider theme={newTheme}>{element}</ThemeProvider>
   </Provider>
 );
