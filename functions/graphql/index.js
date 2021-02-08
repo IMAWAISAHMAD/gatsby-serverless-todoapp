@@ -49,7 +49,7 @@ const server = new ApolloServer({
     if(context.clientContext.user){
       return{user:context.clientContext.user.sub};
     }else{
-      return{}
+      return{};
     }
   },
   
