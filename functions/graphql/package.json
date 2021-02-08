@@ -6,7 +6,8 @@
   "private":true,
   "dependencies": {
     "apollo-server-lambda": "^2.10.0",
-    "graphql": "^14.6.0"
+    "graphql": "^14.6.0",
+    "faunadb": "^4.0.3"
   },
   "workspaces":[
     "packages/*"

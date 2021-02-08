@@ -43,12 +43,7 @@ const resolvers = {
     }
   },
   Mutation: {
-    /* addTodo: async (_, { text },{user}) => {
-      todoIndex++;
-      const id = `key-${todoIndex}`;
-      todos[id] = { id, text, done: false };
-      return todos[id];
-    }, */
+    
     addTodo: async (_, { text }, { user }) => {
       if (!user) {
         throw new Error("Must be authenticated to insert todos");
@@ -67,10 +62,7 @@ const resolvers = {
         id: results.ref.id
       };
     },
-    /* updateTodoDone: (_, { id }) => {
-      todos[id].done = true;
-      return todos[id];
-    } */
+
     updateTodoDone: async (_, { id }, { user }) => {
       if (!user) {
         throw new Error("Must be authenticated to insert todos");
