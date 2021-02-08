@@ -34,6 +34,7 @@ const resolvers = {
       todoIndex++;
       const id= `key-${todoIndex}`;
       todos[id]={id,done:false,text}
+      return todos[id];
     },
     updateTodoDone:(_,{id})=>{
       todos[id].done=true;
